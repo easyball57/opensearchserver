@@ -52,7 +52,8 @@
 			<link source="creator" target="content" />
 			<link source="content" target="content" />
 			<link source="subject" target="content" />
-			<link source="description" target="content" />
+			<link source="description" target="content"/>
+			<link source="sensibility" target="_sensibility" />
 			<link source="title" target="title" />
 		</map>
 	</parser>
@@ -66,6 +67,7 @@
 			<link source="content" target="content" />
 			<link source="subject" target="content" />
 			<link source="description" target="content" />
+			<link source="sensibility" target="_sensibility" />
 			<link source="title" target="title" />
 		</map>
 	</parser>
@@ -137,6 +139,7 @@
 			<link source="content" target="content" />
 			<link source="subject" target="content" />
 			<link source="description" target="content" />
+			<link source="sensibility" target="_sensibility" />
 			<link source="title" target="title" />
 		</map>
 	</parser>
