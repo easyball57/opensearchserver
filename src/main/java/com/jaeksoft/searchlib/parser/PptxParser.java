@@ -31,6 +31,7 @@ import com.jaeksoft.searchlib.streamlimiter.StreamLimiter;
 import com.jaeksoft.searchlib.util.IOUtils;
 import com.jaeksoft.searchlib.util.StringUtils;
 import org.apache.poi.POIXMLProperties.CoreProperties;
+import org.apache.poi.POIXMLProperties.CustomProperties;
 import org.apache.poi.openxml4j.exceptions.OpenXML4JException;
 import org.apache.poi.xslf.extractor.XSLFPowerPointExtractor;
 import org.apache.poi.xslf.usermodel.XSLFSlideShow;
@@ -49,7 +50,7 @@ public class PptxParser extends Parser {
 
 	private static ParserFieldEnum[] fl = { ParserFieldEnum.parser_name, ParserFieldEnum.title, ParserFieldEnum.creator,
 			ParserFieldEnum.subject, ParserFieldEnum.description, ParserFieldEnum.content, ParserFieldEnum.lang,
-			ParserFieldEnum.lang_method };
+			ParserFieldEnum.lang_method, ParserFieldEnum.sensitivity };
 
 	public PptxParser() {
 		super(fl);
@@ -91,6 +92,15 @@ public class PptxParser extends Parser {
 				result.addField(ParserFieldEnum.keywords, info.getKeywords());
 			}
 
+			// Addon for Azure Identidy Protection
+			CustomProperties cust = poiExtractor.getCustomProperties();
+			if (cust != null) {
+				String sensitivity = cust.getProperty("Sensitivity").getLpwstr();
+				if (sensitivity != null) {
+					result.addField(ParserFieldEnum.sensitivity, sensitivity);
+				}
+			}
+			
 			String content = poiExtractor.getText(true, true);
 			result.addField(ParserFieldEnum.content, StringUtils.replaceConsecutiveSpaces(content, " "));
 

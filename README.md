@@ -1,13 +1,10 @@
 [OpenSearchServer](http://www.opensearchserver.com)
 ===================================================
 
-[![Build Status](https://travis-ci.org/jaeksoft/opensearchserver.svg?branch=master)](https://travis-ci.org/jaeksoft/opensearchserver)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jaeksoft/opensearchserver/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jaeksoft/opensearchserver)
-[![Join the chat at https://gitter.im/jaeksoft/opensearchserver](https://badges.gitter.im/jaeksoft/opensearchserver.svg)](https://gitter.im/jaeksoft/opensearchserver)
-
-
-Copyright Emmanuel Keller / Jaeksoft (2008-2016)
+Copyright Emmanuel Keller / Jaeksoft (2008-2017)
 This software is licensed under the GPL v3.
+
+Updated by Eric Mely / Azure Information Protection
 
 OpenSearchServer is a powerful, enterprise-class, search engine program. Using the web user interface, the crawlers (web, file, database, ...) and the REST/RESTFul API you will be able to integrate quickly and easily advanced full-text search capabilities in your application. OpenSearchServer runs on Linux/Unix/BSD/Windows.
 
@@ -16,8 +13,7 @@ Quickstart
 ### One requirement
 You need to have a JAVA 7 (or newer) runtime on your server
 
-### Download the last ZIP or the TAR.GZ archive:
-http://www.opensearchserver.com/#download
+## Directory structure
 
 ### Deflate the content to get the following files:
 - ```FILE``` opensearchserver.jar -> the main library
@@ -43,7 +39,7 @@ cd opensearchserver
 ### Go with the interface and/or the API
 http://localhost:9090
 
-Useful links
+Useful links from original version
 ------------
 + Download binaries: http://www.opensearchserver.com/#download
 + The documentation: http://www.opensearchserver.com/documentation 

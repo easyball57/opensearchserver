@@ -27,6 +27,8 @@ package com.jaeksoft.searchlib.parser;
 import java.io.IOException;
 
 import org.apache.poi.POIXMLProperties.CoreProperties;
+import org.apache.poi.POIXMLProperties.CustomProperties;
+
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 
@@ -49,7 +51,8 @@ public class DocxParser extends Parser {
 			ParserFieldEnum.title, ParserFieldEnum.creator,
 			ParserFieldEnum.subject, ParserFieldEnum.description,
 			ParserFieldEnum.content, ParserFieldEnum.lang,
-			ParserFieldEnum.lang_method };
+			ParserFieldEnum.lang_method, ParserFieldEnum.sensitivity };
+
 
 	public DocxParser() {
 		super(fl);
@@ -82,6 +85,16 @@ public class DocxParser extends Parser {
 						info.getDescription());
 				result.addField(ParserFieldEnum.keywords, info.getKeywords());
 			}
+
+			// Addon for Azure Identidy Protection
+			CustomProperties cust = word.getCustomProperties();
+			if (cust != null) {
+				String sensitivity = cust.getProperty("Sensitivity").getLpwstr();
+				if (sensitivity != null) {
+					result.addField(ParserFieldEnum.sensitivity, sensitivity);
+				}
+			}
+
 
 			String content = word.getText();
 			result.addField(ParserFieldEnum.content,
