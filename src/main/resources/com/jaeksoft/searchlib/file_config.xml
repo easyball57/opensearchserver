@@ -45,7 +45,6 @@
 			<field name="userDeny" indexed="yes" stored="no" termVector="no" />
 			<field name="groupAllow" indexed="yes" stored="no" termVector="no" />
 			<field name="groupDeny" indexed="yes" stored="no" termVector="no" />
-			<field name="_sensitivity" indexed="yes" stored="yes" termVector="positions_offsets" />
 		</fields>
 	</schema>
 	<requests>
