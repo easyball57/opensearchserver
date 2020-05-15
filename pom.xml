@@ -79,6 +79,11 @@
             <artifactId>cxf-rt-transports-http-hc</artifactId>
             <version>${cxf.version}</version>
         </dependency>
+        <dependency> 
+            <groupId>org.eclipse.jdt.core.compiler</groupId>
+            <artifactId>ecj</artifactId>
+            <version>4.4.2</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-core</artifactId>
@@ -674,6 +679,7 @@
                                     <include>org.apache.tomcat.embed:*</include>
                                     <include>commons-io:commons-io</include>
                                     <incudes>com.github.jankroken:commandline</incudes>
+                                    <include>org.eclipse.jdt.core.compiler:ecj</include>
                                 </includes>
                             </artifactSet>
                             <transformers>
