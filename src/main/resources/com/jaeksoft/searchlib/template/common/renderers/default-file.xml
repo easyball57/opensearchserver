@@ -96,14 +96,14 @@ outputformat=MMM d, YYYY
 dateformat=yyyyMMddHHmmssSSS
 	</filter>
 	<filter publicName="File type" fieldName="fileExtension"
-		filterType="FACET_MERGE" replace="false">casesensitive=true
+		filterType="FACET_MERGE" replace="false">casesensitive=false
 regexp.1.find=ppt(.*)
 regexp.1.replace=Powerpoint
-1.label=Word
-1.value1=DOC
-1.value2=DOCX
-2.label=PDF
-2.value1=pdf
-2.value2=PDF
+regexp.2.find=doc(.*)
+regexp.2.replace=Word
+regexp.3.find=xls(.*)
+regexp.3.replace=Excel
+regexp.4.find=pdf(.*)
+regexp.4.replace=Adobe PDF
 	</filter>
 </renderer>
