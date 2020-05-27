@@ -88,7 +88,7 @@ public class PdfParser extends Parser {
 	    ParserFieldEnum.subject, ParserFieldEnum.content, ParserFieldEnum.producer, ParserFieldEnum.keywords,
 	    ParserFieldEnum.creation_date, ParserFieldEnum.modification_date, ParserFieldEnum.language,
 	    ParserFieldEnum.number_of_pages, ParserFieldEnum.ocr_content, ParserFieldEnum.image_ocr_boxes,
-	    ParserFieldEnum.pdfcrack_password, ParserFieldEnum.signature };
+	    ParserFieldEnum.pdfcrack_password, ParserFieldEnum.sign_ok, ParserFieldEnum.sign_date};
 
     public PdfParser() {
 		super(fl);
@@ -153,9 +153,13 @@ public class PdfParser extends Parser {
 		
 		PDSignature pdSignature = pdf.getLastSignatureDictionary();
 		if (pdSignature != null) {
-			final String signature = "Signed by "; // + pdSignature.getName() + " at " + pdSignature.getSignDate();
-			result.addField(ParserFieldEnum.signature, signature);
+			result.addField(ParserFieldEnum.sign_ok, "Signed");
+			final Calendar sign_date = pdSignature.getSignDate();
+			result.addField(ParserFieldEnum.sign_date, String.valueOf(sign_date.get(Calendar.YEAR)) + "/" + String.valueOf(sign_date.get(Calendar.MONTH)) + "/" + String.valueOf(sign_date.get(Calendar.DAY_OF_MONTH)));
 		}
+		/*else {
+			result.addField(ParserFieldEnum.signature, "Not Signed");
+		} */
     }
 
     private int addLine(ParserResultItem result, String line) {

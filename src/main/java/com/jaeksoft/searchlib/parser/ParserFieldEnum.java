@@ -181,7 +181,8 @@ public enum ParserFieldEnum {
 	
 	// addon PDF signature;
 
-	signature;
+	sign_ok,
+	sign_date;
 
 	public static ParserFieldEnum find(String fieldName) {
 		for (ParserFieldEnum pfe : values())

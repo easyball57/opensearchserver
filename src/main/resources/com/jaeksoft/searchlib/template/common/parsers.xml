@@ -116,7 +116,8 @@
 			<link source="content" target="content" />
 			<link source="subject" target="content" />
 			<link source="title" target="title" />
-			<link source="signature" target="_signature" />
+			<link source="sign_ok" target="_signature_ok" />
+			<link source="sign_date" target="_signature_date" />
 		</map>
 	</parser>
 	<parser name="PPT parser" class="com.jaeksoft.searchlib.parser.PptParser"

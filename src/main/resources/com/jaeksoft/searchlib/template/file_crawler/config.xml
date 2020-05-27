@@ -344,7 +344,8 @@
 			<field name="groupAllow" indexed="yes" stored="no" termVector="yes"/>
 			<field name="groupDeny" indexed="yes" stored="no" termVector="yes"/>
 			<field name="_sensitivity" indexed="yes" stored="yes" termVector="positions_offsets" />
-			<field name="_signature" indexed="yes" stored="no" termVector="yes" />
+			<field name="_signature_ok" indexed="yes" stored="yes" termVector="yes" />
+			<field name="_signature_date" indexed="yes" stored="yes" termVector="yes" />
 		</fields>
 	</schema>
 
