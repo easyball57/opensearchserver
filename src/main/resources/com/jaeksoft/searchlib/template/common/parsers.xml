@@ -53,7 +53,7 @@
 			<link source="content" target="content" />
 			<link source="subject" target="content" />
 			<link source="description" target="content"/>
-			<link source="sensibility" target="_sensibility" />
+			<link source="sensibility" target="_sensitivity" />
 			<link source="title" target="title" />
 		</map>
 	</parser>
@@ -67,7 +67,7 @@
 			<link source="content" target="content" />
 			<link source="subject" target="content" />
 			<link source="description" target="content" />
-			<link source="sensibility" target="_sensibility" />
+			<link source="sensibility" target="_sensitivity" />
 			<link source="title" target="title" />
 		</map>
 	</parser>
@@ -116,6 +116,7 @@
 			<link source="content" target="content" />
 			<link source="subject" target="content" />
 			<link source="title" target="title" />
+			<link source="signature" target="_signature" />
 		</map>
 	</parser>
 	<parser name="PPT parser" class="com.jaeksoft.searchlib.parser.PptParser"
@@ -139,7 +140,7 @@
 			<link source="content" target="content" />
 			<link source="subject" target="content" />
 			<link source="description" target="content" />
-			<link source="sensibility" target="_sensibility" />
+			<link source="sensibility" target="_sensitivity" />
 			<link source="title" target="title" />
 		</map>
 	</parser>

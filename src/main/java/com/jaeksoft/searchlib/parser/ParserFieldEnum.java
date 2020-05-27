@@ -177,7 +177,11 @@ public enum ParserFieldEnum {
 	email_attachment_content,
 
 	// Addon Azure Identity Protection
-	sensitivity;
+	sensitivity,
+	
+	// addon PDF signature;
+
+	signature;
 
 	public static ParserFieldEnum find(String fieldName) {
 		for (ParserFieldEnum pfe : values())

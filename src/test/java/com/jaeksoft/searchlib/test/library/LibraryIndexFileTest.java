@@ -127,6 +127,7 @@ public class LibraryIndexFileTest {
 				.request(request);
 
 		// Check the number of returned document
+		
 		assertEquals(1, results.getNumFound());
 
 		// Iterate over the documents found
@@ -137,6 +138,6 @@ public class LibraryIndexFileTest {
 			assertNotNull(content);
 			assertTrue(content.trim().length() > 0);
 		}
-
+		
 	}
 }

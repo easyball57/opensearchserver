@@ -339,11 +339,12 @@
 			<field name="fileExtension" indexed="yes" stored="no" />
 			<field name="fileType" indexed="yes" stored="no" />
 			<field name="fileSize" indexed="yes" stored="no" analyzer="LongAnalyzer" />
-			<field name="userAllow" indexed="yes" stored="no" />
-			<field name="userDeny" indexed="yes" stored="no" />
-			<field name="groupAllow" indexed="yes" stored="no" />
-			<field name="groupDeny" indexed="yes" stored="no" />
+			<field name="userAllow" indexed="yes" stored="no" termVector="yes"/>
+			<field name="userDeny" indexed="yes" stored="no" termVector="yes"/>
+			<field name="groupAllow" indexed="yes" stored="no" termVector="yes"/>
+			<field name="groupDeny" indexed="yes" stored="no" termVector="yes"/>
 			<field name="_sensitivity" indexed="yes" stored="yes" termVector="positions_offsets" />
+			<field name="_signature" indexed="yes" stored="no" termVector="yes" />
 		</fields>
 	</schema>
 
