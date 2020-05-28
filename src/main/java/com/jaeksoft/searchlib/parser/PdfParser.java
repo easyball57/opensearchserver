@@ -155,7 +155,7 @@ public class PdfParser extends Parser {
 		if (pdSignature != null) {
 			result.addField(ParserFieldEnum.sign_ok, "Signed");
 			final Calendar sign_date = pdSignature.getSignDate();
-			result.addField(ParserFieldEnum.sign_date, String.valueOf(sign_date.get(Calendar.YEAR)) + "/" + String.valueOf(sign_date.get(Calendar.MONTH)) + "/" + String.valueOf(sign_date.get(Calendar.DAY_OF_MONTH)));
+			result.addField(ParserFieldEnum.sign_date, String.format("%02d/%02d/%04d", sign_date.get(Calendar.DAY_OF_MONTH), sign_date.get(Calendar.MONTH), sign_date.get(Calendar.YEAR)));
 		}
 		/*else {
 			result.addField(ParserFieldEnum.signature, "Not Signed");
@@ -172,7 +172,6 @@ public class PdfParser extends Parser {
 		result.addField(ParserFieldEnum.content, line);
 		return line.length();
     }
-
     /**
      * Extract text content using PDFBox
      * 
