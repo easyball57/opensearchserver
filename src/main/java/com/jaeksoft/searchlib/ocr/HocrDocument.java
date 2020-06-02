@@ -185,7 +185,7 @@ public class HocrDocument {
 
 	final public static void main(String[] args) throws SearchLibException {
 		HocrDocument hocrDocument = new HocrDocument(new File(
-				"/Users/ekeller/Desktop/ossocr1998028053342416847.html"));
+				"/home/eric/oss/ossocr1998028053342416847.html"));
 		System.out.println(hocrDocument.getJsonBoxMap().size());
 	}
 }
