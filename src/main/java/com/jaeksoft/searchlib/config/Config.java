@@ -577,7 +577,7 @@ public abstract class Config implements ThreadFactory {
 			throws SearchLibException {
 		try {
 			// easyball57 : bug add .xml even if the file name has already the extension
-			final String ext = ".xml";
+			String ext = ".xml";
 			if (name.endsWith(ext)) {
 				ext = "";
 			}
