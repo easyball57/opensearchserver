@@ -576,7 +576,13 @@ public abstract class Config implements ThreadFactory {
 	private void saveCfrXml(ReadWriteLock lock, File directory, String name, XmlWriter.Interface writer)
 			throws SearchLibException {
 		try {
-			final ConfigFileRotation cfr = configFiles.get(directory, URLEncoder.encode(name, "UTF-8") + ".xml");
+			// easyball57 : bug add .xml even if the file name has already the extension
+			final String ext = ".xml";
+			if (name.endsWith(ext)) {
+				ext = "";
+			}
+			//final ConfigFileRotation cfr = configFiles.get(directory, URLEncoder.encode(name, "UTF-8") + ".xml");
+			final ConfigFileRotation cfr = configFiles.get(directory, URLEncoder.encode(name, "UTF-8") + ext);
 			if (!replicationLock.rl.tryLock())
 				throw new SearchLibException("Replication in process");
 			try {
