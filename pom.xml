@@ -247,6 +247,11 @@
             <version>1.8.12</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>jbig2-imageio</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <dependency>
             <groupId>org.icepdf</groupId>
             <artifactId>icepdf-core</artifactId>
             <version>5.0.7</version>
