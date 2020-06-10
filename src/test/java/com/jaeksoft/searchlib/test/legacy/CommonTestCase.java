@@ -50,6 +50,7 @@ import com.jaeksoft.searchlib.util.XPathParser;
  * @author Ayyathurai N Naveen
  * 
  */
+@SuppressWarnings("deprecation")
 public class CommonTestCase {
 	public static String INDEX_NAME = "oss";
 	public static String SERVER_URL = "http://localhost:8080/jenkins-oss-1.5-testing/";
@@ -80,7 +81,6 @@ public class CommonTestCase {
 		return httpPost;
 	}
 
-	@SuppressWarnings("deprecation")
 	public int postFile(File file, String contentType, String api)
 			throws IllegalStateException, IOException {
 		String url = SERVER_URL + "/" + api + "?use=" + INDEX_NAME + "&login="
