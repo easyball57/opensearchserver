@@ -33,7 +33,7 @@ import com.jaeksoft.searchlib.result.collector.DocIdInterface;
 
 public class CollapseBaseCollector extends
 		AbstractBaseCollector<CollapseCollectorInterface> implements
-		CollapseDocInterface, CollapseCollectorInterface, DocIdInterface {
+		CollapseDocInterface, CollapseCollectorInterface {
 
 	final int[] sourceIds;
 	protected int totalCollapseCount = 0;

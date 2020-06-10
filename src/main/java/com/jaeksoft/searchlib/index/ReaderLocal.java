@@ -62,7 +62,7 @@ import java.io.PrintWriter;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class ReaderLocal extends ReaderAbstract implements ReaderInterface, Closeable {
+public class ReaderLocal extends ReaderAbstract implements Closeable {
 
 	private final IndexDirectory indexDirectory;
 	private final SpellCheckCache spellCheckCache;

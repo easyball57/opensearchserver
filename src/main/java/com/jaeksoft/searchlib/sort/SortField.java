@@ -39,8 +39,7 @@ import com.jaeksoft.searchlib.util.DomUtils;
 import com.jaeksoft.searchlib.util.RegExpUtils;
 import com.jaeksoft.searchlib.util.XmlWriter;
 
-public class SortField extends AbstractField<SortField> implements
-		Comparable<SortField> {
+public class SortField extends AbstractField<SortField> {
 
 	/**
 	 * 

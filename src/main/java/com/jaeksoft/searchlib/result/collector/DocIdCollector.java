@@ -31,7 +31,7 @@ import org.roaringbitmap.RoaringBitmap;
 
 import it.unimi.dsi.fastutil.Swapper;
 
-public class DocIdCollector implements DocIdInterface, Swapper {
+public class DocIdCollector implements DocIdInterface {
 
 	private final int maxDoc;
 	private final int[] ids;

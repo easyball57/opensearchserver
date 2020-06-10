@@ -37,9 +37,7 @@ import com.jaeksoft.searchlib.function.expression.SyntaxError;
 import com.jaeksoft.searchlib.query.ParseException;
 import com.jaeksoft.searchlib.util.XmlWriter;
 
-public class SearchFilterRequest extends AbstractLocalSearchRequest implements
-		RequestInterfaces.ReturnedFieldInterface,
-		RequestInterfaces.FilterListInterface {
+public class SearchFilterRequest extends AbstractLocalSearchRequest {
 
 	private final FilterAbstract<?> filter;
 

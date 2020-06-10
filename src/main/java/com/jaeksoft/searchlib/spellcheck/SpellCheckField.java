@@ -33,8 +33,7 @@ import com.jaeksoft.searchlib.schema.SchemaFieldList;
 import com.jaeksoft.searchlib.util.XPathParser;
 import com.jaeksoft.searchlib.util.XmlWriter;
 
-public class SpellCheckField extends AbstractField<SpellCheckField> implements
-		Comparable<SpellCheckField> {
+public class SpellCheckField extends AbstractField<SpellCheckField> {
 
 	/**
 	 * 

@@ -44,7 +44,7 @@ import com.jaeksoft.searchlib.crawler.file.process.FileInstanceAbstract;
 
 public class DropboxFileInstance extends FileInstanceAbstract {
 
-	private static final DbxRequestConfig DBX_REQUEST_CONFIG = new DbxRequestConfig("opensearcjserver/0.1", "en");
+	private static final DbxRequestConfig DBX_REQUEST_CONFIG = new DbxRequestConfig("opensearchserver/0.1", "en");
 
 	private static final DbxAppInfo DBX_APP_INFO = new DbxAppInfo("2q1itz9v9manpv9", "hjpihpchb0xwd3d");
 
@@ -54,7 +54,7 @@ public class DropboxFileInstance extends FileInstanceAbstract {
 		super();
 	}
 
-	protected DropboxFileInstance(FilePathItem filePathItem, DropboxFileInstance parent, DbxEntry dbxEntry)
+	protected DropboxFileInstance(final FilePathItem filePathItem, final DropboxFileInstance parent, final DbxEntry dbxEntry)
 			throws URISyntaxException, UnsupportedEncodingException {
 		init(filePathItem, parent, dbxEntry.path);
 		this.dbxEntry = dbxEntry;
@@ -65,7 +65,7 @@ public class DropboxFileInstance extends FileInstanceAbstract {
 		throw new SearchLibException("Not yet implemented");
 	}
 
-	public static String retrieveAccessToken(DbxWebAuth webAuth, StringBuilder sbUid) throws SearchLibException {
+	public static String retrieveAccessToken(final DbxWebAuth webAuth, final StringBuilder sbUid) throws SearchLibException {
 		// TODO do the implementation
 		throw new SearchLibException("Not yet implemented");
 	}
@@ -92,17 +92,17 @@ public class DropboxFileInstance extends FileInstanceAbstract {
 	@Override
 	public FileInstanceAbstract[] listFilesAndDirectories() throws URISyntaxException, IOException {
 		try {
-			DbxClient dbxClient = connect();
+			final DbxClient dbxClient = connect();
 			DbxEntry.WithChildren entries;
 			entries = dbxClient.getMetadataWithChildren(getPath());
 			if (entries == null || entries.children == null)
 				return null;
-			FileInstanceAbstract[] fileInstances = new FileInstanceAbstract[entries.children.size()];
+			final FileInstanceAbstract[] fileInstances = new FileInstanceAbstract[entries.children.size()];
 			int i = 0;
-			for (DbxEntry entry : entries.children)
+			for (final DbxEntry entry : entries.children)
 				fileInstances[i++] = new DropboxFileInstance(filePathItem, this, entry);
 			return fileInstances;
-		} catch (DbxException e) {
+		} catch (final DbxException e) {
 			throw new IOException(e);
 		}
 	}
@@ -110,22 +110,22 @@ public class DropboxFileInstance extends FileInstanceAbstract {
 	@Override
 	public FileInstanceAbstract[] listFilesOnly() throws URISyntaxException, IOException {
 		try {
-			DbxClient dbxClient = connect();
+			final DbxClient dbxClient = connect();
 			DbxEntry.WithChildren entries;
 			entries = dbxClient.getMetadataWithChildren(getPath());
 			if (entries == null || entries.children == null)
 				return null;
 			int l = 0;
-			for (DbxEntry entry : entries.children)
+			for (final DbxEntry entry : entries.children)
 				if (entry.isFile())
 					l++;
-			FileInstanceAbstract[] fileInstances = new FileInstanceAbstract[l];
+			final FileInstanceAbstract[] fileInstances = new FileInstanceAbstract[l];
 			int i = 0;
-			for (DbxEntry entry : entries.children)
+			for (final DbxEntry entry : entries.children)
 				if (entry.isFile())
 					fileInstances[i++] = new DropboxFileInstance(filePathItem, this, entry);
 			return fileInstances;
-		} catch (DbxException e) {
+		} catch (final DbxException e) {
 			throw new IOException(e);
 		}
 	}
@@ -166,11 +166,11 @@ public class DropboxFileInstance extends FileInstanceAbstract {
 	@Override
 	public InputStream getInputStream() throws IOException {
 		try {
-			DbxClient dbxClient = connect();
+			final DbxClient dbxClient = connect();
 			DbxClient.Downloader downloader;
 			downloader = dbxClient.startGetFile(getPath(), null);
 			return downloader.body;
-		} catch (DbxException e) {
+		} catch (final DbxException e) {
 			throw new IOException(e);
 		}
 	}

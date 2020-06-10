@@ -30,8 +30,7 @@ import java.io.IOException;
 
 import com.jaeksoft.searchlib.result.collector.CollectorInterface;
 
-public interface DocSetHitCollectorInterface extends CollectorInterface,
-		Swapper {
+public interface DocSetHitCollectorInterface extends CollectorInterface {
 
 	void collectDoc(final int doc) throws IOException;
 

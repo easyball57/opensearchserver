@@ -45,9 +45,7 @@ import com.jaeksoft.searchlib.result.ResultSearchSingle;
 import com.jaeksoft.searchlib.schema.Schema;
 import com.jaeksoft.searchlib.schema.SchemaField;
 
-public abstract class AbstractLocalSearchRequest extends AbstractSearchRequest
-		implements RequestInterfaces.ReturnedFieldInterface,
-		RequestInterfaces.FilterListInterface {
+public abstract class AbstractLocalSearchRequest extends AbstractSearchRequest {
 
 	private transient Query boostedComplexQuery;
 	private transient Query notBoostedComplexQuery;

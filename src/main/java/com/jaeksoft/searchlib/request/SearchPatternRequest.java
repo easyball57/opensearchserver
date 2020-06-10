@@ -43,9 +43,7 @@ import com.jaeksoft.searchlib.query.QueryUtils;
 import com.jaeksoft.searchlib.util.XPathParser;
 import com.jaeksoft.searchlib.util.XmlWriter;
 
-public class SearchPatternRequest extends AbstractLocalSearchRequest implements
-		RequestInterfaces.ReturnedFieldInterface,
-		RequestInterfaces.FilterListInterface {
+public class SearchPatternRequest extends AbstractLocalSearchRequest {
 
 	private String snippetPatternQuery;
 	private String searchPatternQuery;

@@ -48,9 +48,7 @@ import com.jaeksoft.searchlib.util.StringUtils;
 import com.jaeksoft.searchlib.util.XPathParser;
 import com.jaeksoft.searchlib.util.XmlWriter;
 
-public class SearchMergedRequest extends AbstractSearchRequest implements
-		RequestInterfaces.ReturnedFieldInterface,
-		RequestInterfaces.FilterListInterface {
+public class SearchMergedRequest extends AbstractSearchRequest {
 
 	private final TreeSet<RemoteRequest> requests;
 
