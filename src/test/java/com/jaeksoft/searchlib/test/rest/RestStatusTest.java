@@ -1,12 +1,12 @@
 package com.jaeksoft.searchlib.test.rest;
 
 import com.jaeksoft.searchlib.webservice.CommonResult;
-import com.jaeksoft.searchlib.test.IntegrationTest;
-import com.jaeksoft.searchlib.webservice.CommonListResult;
-import com.jaeksoft.searchlib.webservice.CommonResult;
-import org.junit.FixMethodOrder;
+// import com.jaeksoft.searchlib.test.IntegrationTest;
+// import com.jaeksoft.searchlib.webservice.CommonListResult;
+// import com.jaeksoft.searchlib.webservice.CommonResult;
+// import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
+// import org.junit.runners.MethodSorters;
 import org.xml.sax.SAXException;
 
 import javax.ws.rs.core.MediaType;
@@ -15,7 +15,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPathExpressionException;
 import java.io.IOException;
 
-import static org.junit.Assert.*;
+// import static org.junit.Assert.*;
 
 /**
  * Created by aureliengiudici on 19/04/2016.

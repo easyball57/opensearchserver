@@ -23,7 +23,7 @@
  **/
 package com.jaeksoft.searchlib.webservice.crawler.webcrawler;
 
-import com.jaeksoft.searchlib.crawler.web.database.UrlItem;
+// import com.jaeksoft.searchlib.crawler.web.database.UrlItem;
 import com.jaeksoft.searchlib.webservice.CommonListResult;
 import com.jaeksoft.searchlib.webservice.CommonResult;
 

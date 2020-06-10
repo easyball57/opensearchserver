@@ -29,7 +29,7 @@ import java.io.IOException;
 import org.apache.commons.lang.ArrayUtils;
 import org.roaringbitmap.RoaringBitmap;
 
-import it.unimi.dsi.fastutil.Swapper;
+// import it.unimi.dsi.fastutil.Swapper;
 
 public class DocIdCollector implements DocIdInterface {
 

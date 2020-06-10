@@ -24,7 +24,7 @@
 
 package com.jaeksoft.searchlib.result.collector.docsethit;
 
-import it.unimi.dsi.fastutil.Swapper;
+// import it.unimi.dsi.fastutil.Swapper;
 
 import java.io.IOException;
 
