@@ -1,0 +1,231 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Server<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.Server",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DegreesRadiansFilter<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.analysis.filter.DegreesRadiansFilter",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ProperNounFilter<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.analysis.filter.ProperNounFilter",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RegularExpressionReplaceFilter<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.analysis.filter.RegularExpressionReplaceFilter",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BeiderMorseTokenFilter<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.analysis.filter.phonetic.BeiderMorseTokenFilter",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Event<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.crawler.file.Event",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PatternItem<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.crawler.web.database.pattern.PatternItem",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HttpAbstract<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.crawler.web.spider.HttpAbstract",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HttpDownloader<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.crawler.web.spider.HttpDownloader",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NaiveCSSParser<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.crawler.web.spider.NaiveCSSParser",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GeoFilter<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.filter.GeoFilter",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RootExpression<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.function.expression.RootExpression",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HocrBox<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.ocr.HocrBox",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HocrDocument<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.ocr.HocrDocument",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ExternalParser<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.parser.ExternalParser",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-QueryParser<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.query.QueryParser",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AuthPluginNtlmLogin<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.renderer.plugin.AuthPluginNtlmLogin",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SortField<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.sort.SortField",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ActiveDirectory<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.ActiveDirectory",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HunspellUtils<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.HunspellUtils",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Lang<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.Lang",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LinkUtils<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.LinkUtils",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MimeUtils<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.MimeUtils",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NetworksUtils<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.NetworksUtils",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RegExpUtils<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.RegExpUtils",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringUtils<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.StringUtils",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FloatBufferedArrayFactory<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.array.FloatBufferedArrayFactory",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IntBufferedArrayFactory<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.array.IntBufferedArrayFactory",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Dailymotion<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.video.Dailymotion",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Vimeo<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.video.Vimeo",
+            "projectName": "opensearchserver"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-YouTube<opensearchserver>",
+            "request": "launch",
+            "mainClass": "com.jaeksoft.searchlib.util.video.YouTube",
+            "projectName": "opensearchserver"
+        }
+    ]
+}
