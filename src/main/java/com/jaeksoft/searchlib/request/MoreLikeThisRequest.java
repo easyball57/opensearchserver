@@ -59,6 +59,7 @@ import com.jaeksoft.searchlib.util.XPathParser;
 import com.jaeksoft.searchlib.util.XmlWriter;
 import com.jaeksoft.searchlib.web.ServletTransaction;
 
+@SuppressWarnings("deprecation")
 public class MoreLikeThisRequest extends AbstractRequest implements
 		RequestInterfaces.FilterListInterface,
 		RequestInterfaces.ReturnedFieldInterface {

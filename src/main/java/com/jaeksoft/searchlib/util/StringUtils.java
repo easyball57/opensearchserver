@@ -46,6 +46,7 @@ import com.ibm.icu.text.CharsetDetector;
 import com.ibm.icu.text.CharsetMatch;
 import com.jaeksoft.searchlib.util.FormatUtils.ThreadSafeDecimalFormat;
 
+@SuppressWarnings("deprecation")
 public class StringUtils extends org.apache.commons.lang3.StringUtils {
 
 	private final static ThreadSafeDecimalFormat unitFormat = new ThreadSafeDecimalFormat("0.0");

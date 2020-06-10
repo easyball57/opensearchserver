@@ -38,6 +38,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpPost;
 import org.xml.sax.SAXException;
 
+@SuppressWarnings("deprecation")
 public class AutocompletionTest extends TestCase {
 	private CommonTestCase commomTestCase = null;
 

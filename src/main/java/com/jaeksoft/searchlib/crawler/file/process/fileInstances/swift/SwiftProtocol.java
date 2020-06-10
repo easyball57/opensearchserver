@@ -51,6 +51,7 @@ import com.jaeksoft.searchlib.util.RegExpUtils;
 import com.jaeksoft.searchlib.util.StringUtils;
 import com.jaeksoft.searchlib.util.array.BytesOutputStream;
 
+@SuppressWarnings("deprecation")
 public class SwiftProtocol {
 
 	private final static String APPLICATION_DIRECTORY = "application/directory";

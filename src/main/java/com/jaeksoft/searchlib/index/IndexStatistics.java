@@ -28,6 +28,7 @@ import java.io.IOException;
 
 import org.apache.lucene.index.IndexReader;
 
+@SuppressWarnings("deprecation")
 public class IndexStatistics {
 
 	private int maxDoc;

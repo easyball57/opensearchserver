@@ -32,6 +32,7 @@ import java.util.List;
 import org.apache.commons.net.util.SubnetUtils;
 import org.apache.commons.net.util.SubnetUtils.SubnetInfo;
 
+@SuppressWarnings("deprecation")
 public class NetworksUtils {
 
 	public final static SubnetInfo[] getSubnetArray(String ips)

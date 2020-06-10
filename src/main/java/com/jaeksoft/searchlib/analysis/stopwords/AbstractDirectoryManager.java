@@ -144,11 +144,13 @@ public abstract class AbstractDirectoryManager<T> {
 		}
 
 		@Override
+		@SuppressWarnings("deprecation")
 		protected String getContent(File file) throws IOException {
 			return FileUtils.readFileToString(file);
 		}
 
 		@Override
+		@SuppressWarnings("deprecation")
 		protected void saveContent(File file, String content)
 				throws IOException {
 			FileUtils.writeStringToFile(file, content);

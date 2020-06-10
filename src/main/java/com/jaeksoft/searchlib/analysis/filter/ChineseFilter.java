@@ -31,6 +31,7 @@ import com.jaeksoft.searchlib.analysis.FilterFactory;
 public class ChineseFilter extends FilterFactory {
 
 	@Override
+	@SuppressWarnings("deprecation")
 	public TokenStream create(TokenStream tokenStream) {
 		return new org.apache.lucene.analysis.cn.ChineseFilter(tokenStream);
 	}

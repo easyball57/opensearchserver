@@ -61,6 +61,7 @@ import com.jaeksoft.searchlib.webservice.query.document.IndexDocumentResult;
 import com.jaeksoft.searchlib.webservice.query.document.IndexDocumentResult.IndexField;
 import com.jaeksoft.searchlib.webservice.query.document.IndexDocumentResult.IndexTerm;
 
+@SuppressWarnings("deprecation")
 public class WriterLocal extends WriterAbstract {
 
 	private IndexDirectory indexDirectory;

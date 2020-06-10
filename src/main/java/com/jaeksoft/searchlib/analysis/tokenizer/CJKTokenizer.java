@@ -31,6 +31,7 @@ import org.apache.lucene.analysis.Tokenizer;
 public class CJKTokenizer extends TokenizerFactory {
 
 	@Override
+	@SuppressWarnings("deprecation")
 	public Tokenizer create(Reader reader) {
 		return new org.apache.lucene.analysis.cjk.CJKTokenizer(reader);
 	}

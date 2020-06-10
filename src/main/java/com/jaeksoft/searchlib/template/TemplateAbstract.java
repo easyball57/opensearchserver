@@ -37,6 +37,7 @@ import com.jaeksoft.searchlib.SearchLibException;
 import com.jaeksoft.searchlib.util.IOUtils;
 import com.jaeksoft.searchlib.util.StringUtils;
 
+@SuppressWarnings("deprecation")
 public abstract class TemplateAbstract {
 
 	private final String rootPath;

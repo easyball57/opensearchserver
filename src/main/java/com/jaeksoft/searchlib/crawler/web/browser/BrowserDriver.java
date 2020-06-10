@@ -74,6 +74,7 @@ import com.jaeksoft.searchlib.crawler.web.spider.HttpDownloader;
 import com.jaeksoft.searchlib.script.commands.Selectors.Selector;
 import com.jaeksoft.searchlib.util.IOUtils;
 
+@SuppressWarnings("deprecation")
 public abstract class BrowserDriver<T extends WebDriver> implements Closeable {
 
 	protected final BrowserDriverEnum type;

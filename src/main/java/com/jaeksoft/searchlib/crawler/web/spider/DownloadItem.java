@@ -49,6 +49,7 @@ import com.jaeksoft.searchlib.SearchLibException.WrongStatusCodeException;
 import com.jaeksoft.searchlib.util.IOUtils;
 import com.jaeksoft.searchlib.util.StringUtils;
 
+@SuppressWarnings("deprecation")
 public class DownloadItem {
 
 	private URI uri;

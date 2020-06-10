@@ -32,6 +32,7 @@ import org.apache.lucene.util.Version;
 public class RussianLetterTokenizer extends TokenizerFactory {
 
 	@Override
+	@SuppressWarnings("deprecation")
 	public Tokenizer create(Reader reader) {
 		return new org.apache.lucene.analysis.ru.RussianLetterTokenizer(
 				Version.LUCENE_36, reader);

@@ -69,6 +69,7 @@ import com.jaeksoft.searchlib.util.StringUtils;
 import com.jaeksoft.searchlib.util.ThreadUtils.RecursiveTracker;
 import com.jaeksoft.searchlib.util.ThreadUtils.RecursiveTracker.RecursiveEntry;
 
+@SuppressWarnings("deprecation")
 public class HtmlArchiver {
 
 	private final BrowserDriver<?> browserDriver;

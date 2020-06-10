@@ -56,6 +56,7 @@ import java.util.*;
 /**
  * This class handles a list of indexes stored in a given directory.
  */
+@SuppressWarnings("deprecation")
 public class ClientCatalog {
 
 	private static transient volatile TreeMap<File, Client> CLIENTS = new TreeMap<File, Client>();

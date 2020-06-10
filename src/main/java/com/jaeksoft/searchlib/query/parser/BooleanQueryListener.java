@@ -1,6 +1,6 @@
 // Generated from com/jaeksoft/searchlib/query/parser/BooleanQuery.g4 by ANTLR 4.5
 package com.jaeksoft.searchlib.query.parser;
-import org.antlr.v4.runtime.misc.NotNull;
+//import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**

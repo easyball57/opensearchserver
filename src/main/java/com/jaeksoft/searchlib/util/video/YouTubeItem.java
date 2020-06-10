@@ -32,6 +32,7 @@ import org.json.JSONObject;
 
 import com.jaeksoft.searchlib.util.IOUtils;
 
+@SuppressWarnings("deprecation")
 public class YouTubeItem {
 
 	private final String title;

@@ -42,6 +42,7 @@ import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@SuppressWarnings("deprecation")
 public class InstanceProperties {
 
 	private final long maxDocumentLimit;

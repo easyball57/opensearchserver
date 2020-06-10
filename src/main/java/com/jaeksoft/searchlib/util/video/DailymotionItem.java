@@ -32,6 +32,7 @@ import org.json.simple.JSONObject;
 
 import com.jaeksoft.searchlib.util.IOUtils;
 
+@SuppressWarnings("deprecation")
 public class DailymotionItem {
 
 	private final String title;

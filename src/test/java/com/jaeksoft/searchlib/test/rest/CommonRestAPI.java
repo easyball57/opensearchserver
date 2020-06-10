@@ -45,6 +45,7 @@ import java.util.Collections;
 
 import static org.junit.Assert.*;
 
+@SuppressWarnings("deprecation")
 public abstract class CommonRestAPI {
 
 	public WebClient client() {

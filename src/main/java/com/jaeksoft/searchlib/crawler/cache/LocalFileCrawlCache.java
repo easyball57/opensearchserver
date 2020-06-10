@@ -41,6 +41,7 @@ import com.jaeksoft.searchlib.ClientFactory;
 import com.jaeksoft.searchlib.crawler.web.spider.DownloadItem;
 import com.jaeksoft.searchlib.util.ReadWriteLock;
 
+@SuppressWarnings("deprecation")
 public class LocalFileCrawlCache extends CrawlCacheProvider {
 
 	private final ReadWriteLock rwl = new ReadWriteLock();

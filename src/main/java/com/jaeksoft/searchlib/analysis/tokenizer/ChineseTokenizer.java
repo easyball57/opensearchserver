@@ -31,6 +31,7 @@ import org.apache.lucene.analysis.Tokenizer;
 public class ChineseTokenizer extends TokenizerFactory {
 
 	@Override
+	@SuppressWarnings("deprecation")
 	public Tokenizer create(Reader reader) {
 		return new org.apache.lucene.analysis.cn.ChineseTokenizer(reader);
 	}

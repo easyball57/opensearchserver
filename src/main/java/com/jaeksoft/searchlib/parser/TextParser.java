@@ -35,6 +35,7 @@ import com.jaeksoft.searchlib.analysis.LanguageEnum;
 import com.jaeksoft.searchlib.streamlimiter.StreamLimiter;
 import com.jaeksoft.searchlib.util.IOUtils;
 
+@SuppressWarnings("deprecation")
 public class TextParser extends Parser {
 
 	public static final String[] DEFAULT_MIMETYPES = { "text/plain" };

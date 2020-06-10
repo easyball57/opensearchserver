@@ -52,6 +52,7 @@ import com.jaeksoft.searchlib.util.Variables;
 
 import jcifs.smb.SmbException;
 
+@SuppressWarnings("deprecation")
 public class TaskFileCrawlerEvent extends TaskAbstract {
 
 	final private TaskPropertyDef propFilePathItem = new TaskPropertyDef(TaskPropertyType.comboBox, "File path item",

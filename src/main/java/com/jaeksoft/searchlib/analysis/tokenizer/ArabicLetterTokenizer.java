@@ -32,6 +32,7 @@ import org.apache.lucene.util.Version;
 public class ArabicLetterTokenizer extends TokenizerFactory {
 
 	@Override
+	@SuppressWarnings("deprecation")
 	public Tokenizer create(Reader reader) {
 		return new org.apache.lucene.analysis.ar.ArabicLetterTokenizer(
 				Version.LUCENE_36, reader);

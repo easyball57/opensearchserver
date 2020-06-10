@@ -28,6 +28,7 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 
+@SuppressWarnings("deprecation")
 public class Sequence {
 
 	private ReadWriteLock rwl = new ReadWriteLock();

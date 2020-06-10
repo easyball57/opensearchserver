@@ -211,7 +211,7 @@ public class OcrManager implements Closeable {
 			StringBuilder sbResult = new StringBuilder();
 			// Easyball57 : modification avec code retour tesseract à 0 sur la version 3.04 ubuntu 
 			//ExecuteUtils.run(args, 60, sbResult, 1);
-			ExecuteUtils.run(args, 60, sbResult, 0);
+			ExecuteUtils.run(args, 60, sbResult, 0, 1);
 			String result = sbResult.toString();
 			if (!tesseractCheckPattern.matcher(result).find())
 				throw new SearchLibException("Wrong returned message: " + result);
